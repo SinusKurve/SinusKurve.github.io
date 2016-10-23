@@ -12,7 +12,7 @@ function setup() {
   sliderA = createSlider(-100,100,10);
   sliderB = createSlider(-100,100,10);
   sliderC = createSlider(-200,200,0);
-  sliderD = createSlider(-500,500,0);
+  sliderD = createSlider(-400,400,0);
   funktion = createElement('h1','f(x)=sin(x*'+sliderA.value()+')');
 }
 
