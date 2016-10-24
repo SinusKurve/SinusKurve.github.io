@@ -17,7 +17,7 @@ function setup() {
 }
 
 function draw() {
-  rotate(TWO_PI);
+  rotate(radians(180));
   translate(width/2,height/2);
   background(255);
   if(sliderD.value()<0){Dsign = '-';}else{Dsign = '+';}
