@@ -17,8 +17,8 @@ function setup() {
 }
 
 function draw() {
-  rotate(radians(180));
   translate(width/2,height/2);
+  rotate(radians(180));
   background(255);
   if(sliderD.value()<0){Dsign = '-';}else{Dsign = '+';}
   if(sliderC.value()<0){Csign = '-';}else{Csign = '+';}
