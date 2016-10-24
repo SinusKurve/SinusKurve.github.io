@@ -18,10 +18,9 @@ function setup() {
 
 function draw() {
   translate(width/2,height/2);
-  rotate(radians(180));
   background(255);
   if(sliderD.value()<0){Dsign = '-';}else{Dsign = '+';}
-  if(sliderC.value()<0){Csign = '-';}else{Csign = '+';}
+  if(sliderC.value()<0){Csign = '+';}else{Csign = '-';}
   funktion.html('f(x)='+sliderA.value()/10+'*sin('+sliderB.value()/10+'*x'+Csign+abs(sliderC.value())+')'+Dsign+abs(sliderD.value()/100));
   strokeWeight(2);
   line(0,height,0,-height);
