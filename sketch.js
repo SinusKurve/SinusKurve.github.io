@@ -1,4 +1,4 @@
-var sliderA;
++var sliderA;
 var sliderB;
 var sliderC;
 var sliderD;
@@ -29,7 +29,7 @@ function draw() {
  strokeWeight(4);
   beginShape()
   for(var x = -width; x < width/2 ; x+=2){
-  var output=(a*sin(radians(b*x-c))+d)*(100-4*2);
+  var output=(a*sin(radians(b*x+c))+d)*(100-4*2);
   vertex(x,output);
   }
   endShape();
