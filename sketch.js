@@ -1,4 +1,4 @@
-+var sliderA;
+var sliderA;
 var sliderB;
 var sliderC;
 var sliderD;
