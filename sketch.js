@@ -13,6 +13,8 @@ function setup() {
   sliderB = createSlider(-100,100,10);
   sliderC = createSlider(-200,200,0);
   sliderD = createSlider(-350,350,0);
+  sliderC.value(0);
+  sliderD.value(0);
   funktion = createElement('h1','f(x)=sin(x*'+sliderA.value()+')');
 }
 
@@ -26,7 +28,15 @@ function draw() {
   line(0,height,0,-height);
   line(-width,0,width,0);
   var a = sliderA.value()/10,b = sliderB.value()/10,c = sliderC.value(),d = sliderD.value()/100;
- strokeWeight(4);
+  strokeWeight(4);
+  stroke(0,50);
+  beginShape()//normal sine function for comparison
+  for(var x = -width; x < width/2 ; x+=2){
+  var output=(-1*sin(radians(1*x-0))-0)*(100-4*2);
+  vertex(x,output);
+  }
+  endShape();
+  stroke(0);
   beginShape()
   for(var x = -width; x < width/2 ; x+=2){
   var output=(-a*sin(radians(b*x-c))-d)*(100-4*2);
